@@ -6,3 +6,9 @@ You must be connected to the Internet to use this application. Registration is d
 
 Application size APK : 7.6 MB
 
+
+
+
+
+
+https://github.com/LayaArianpour/HostCo/issues/3#issue-930242734
