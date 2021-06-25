@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">HostCo</string>
+
+    <string name="btn_register_user">User Register</string>
+    <string name="btn_register_hostpital">Hospital Register</string>
+    <string name="btn_login">Login</string>
+
+    <string name="login_title">Login To Account</string>
+
+    <string name="register_account">Create A New Account</string>
+    <string name="register_user">Personal Information</string>
+    <string name="register_hospital">Hospital Information</string>
+    <string name="register_address">Address Information</string>
+
+    <string name="register_haveAccount">Already Have an Account? Login</string>
+    <string name="login_createAccount">No Account yet? Create one</string>
+    <string name="forgotpassword">ForgotPassword?</string>
+    <string name="guide_reset">By Clicking RESET , you will receive an email to reset you password</string>
+
+
+    <string-array name="city">
+        <item>Alborz</item>
+        <item>Arak</item>
+        <item>Ardabil</item>
+        <item>Bandar Abbas</item>
+        <item>Birjand</item>
+        <item>Bojnord</item>
+        <item>Bushehr</item>
+        <item>Gorgan</item>
+        <item>Hamedan</item>
+        <item>Ilam</item>
+        <item>Isfahan</item>
+        <item>Kerman</item>
+        <item>Kermanshah</item>
+        <item>Khoramabad</item>
+        <item>Khuzestan</item>
+        <item>Mashhad</item>
+        <item>Qazvin</item>
+        <item>Qom</item>
+        <item>Rasht</item>
+        <item>Sanandaj</item>
+        <item>Sari</item>
+        <item>Semnan</item>
+        <item>Shahr-e Kord</item>
+        <item>Shiraz</item>
+        <item>Tehran</item>
+        <item>Yasuj</item>
+        <item>Yazd</item>
+        <item>Zahedan</item>
+        <item>Zanjan</item>
+
+    </string-array>
+
+
+    <string name="q1">Have you had abnormal chills in recent days?</string>
+    <string name="q2">Have you had severe and frequent dry coughs in recent days?</string>
+    <string name="q3">Have you had a bad sore throat in recent days?</string>
+    <string name="q4">Do you have any problems in your ordinary activities due to cardiovascular diseases?</string>
+    <string name="q5">Do you have any problems in your current life due to asthma or other chronic respiratory diseases?</string>
+
+    <string name="q6">Do you have uncontrolled high blood pressure in spite of taking blood pressure medication?</string>
+    <string name="q7">Do you have diabetes and experience complications in spite of taking your medication?</string>
+    <string name="q8">Have you continuously used corticosteroids for more than two weeks to control chronic inflammatory diseases?</string>
+    <string name="q9">Are you receiving chemotherapy or radiotherapy?</string>
+
+    <string name="q10">Have you had organ transplantation recently?</string>
+    <string name="q11">Are you under treatment for Acquired Immunodeficiency Syndrome (AIDS)?</string>
+    <string name="q12">Do you have any primary immunodeficiency disorder?</string>
+    <string name="q13">Are you pregnant?</string>
+    <string name="q14">In recent days, has any of your close relatives or friends been hospitalized due to severe respiratory diseases?</string>
+
+    <string name="resultOk">You are healthy and have no infection.</string>
+    <string name="resultGood">You are very likely to get Covid-19 and see a doctor as soon as possible, and be sure to follow health protocols during this time.</string>
+    <string name="resultBad">You are very unlikely to get Covid-19, but be sure to see your doctor if your symptoms worsen.</string>
+
+    <string name="counterTitle">You have not requested a response</string>
+
+</resources>

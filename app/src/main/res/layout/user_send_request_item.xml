@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/container0HospitalItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHospitalNameHospitalItem"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+                android:text="Hospital Name"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtHospitalTelHospitalItem"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="Hospital Tel"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtHospitalNameHospitalItem"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/container1HospitalItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_below="@id/container0HospitalItem">
+
+            <TextView
+                android:id="@+id/txtCapacityHospitalItem"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+                android:text="Capacity"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtImprovedHospitalItem"
+                android:layout_toRightOf="@+id/txtCapacityHospitalItem"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_baseline_self_improvement_24"
+                android:text="Improved"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/container2HospitalItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            >
+
+            <TextView
+                android:id="@+id/txtDeathHospitalItem"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_baseline_mood_bad_24"
+                android:text="The dead"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txtHospitalizationHospitalItem"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txtDeathHospitalItem"
+                android:padding="5dp"
+                android:drawableStart="@drawable/ic_baseline_airline_seat_individual_suite_24"
+                android:text="Hospitalization"
+                android:textColor="@color/black"
+                />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtHospitalAdressHospitalItem"
+            android:layout_below="@+id/container2HospitalItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Hospital Adress"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRequestHospitalItem"
+            android:backgroundTint="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Send Request"
+            android:textColor="@color/white"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

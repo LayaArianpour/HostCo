@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterHospitalActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/containerHeaderRegisterHospital"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackActivityRegisterHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Register"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbRegisterHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/container1InfoAccountRegisterHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderRegisterHospital"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtInfoAccountRegisterHospitalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_account"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"/>
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoAccountRegisterHospitalTitle"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textEmailAddress"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPasswordRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmailRegisterHospital"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textPassword"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtRePasswordRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPasswordRegisterHospital"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Re Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/txtHaveAccountLoginHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_haveAccount"
+            android:textColor="#698080"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/txtRePasswordRegisterHospital"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/container2InfoPersonalRegisterHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderRegisterHospital"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtInfoPersonalRegisterHospitalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_user"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNameRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoPersonalRegisterHospitalTitle"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:hint=" HospitalName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPhoneRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameRegisterHospital"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint=" Telephone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="phone"
+            />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPhoneRegisterHospital"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+            android:hint=" Capacity"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Improved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Capacity"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_self_improvement_24"
+            android:hint=" Improved"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/death"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Improved"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_mood_bad_24"
+            android:hint=" The dead"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Hospitalization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/death"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_airline_seat_individual_suite_24"
+            android:hint=" Hospitalization"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/container3InfoAddressRegisterHospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderRegisterHospital"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtInfoAddressRegisterHospitalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_address"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/txtCountryRegisterHospitalTitle"
+            android:layout_below="@+id/txtInfoAddressRegisterHospitalTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=" Country"
+            android:textColor="#698080"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_location_country"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/txtCountryRegisterHospitalTitle"
+            android:layout_below="@+id/txtInfoAddressRegisterHospitalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iran"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/txtCityRegisterHospitalTitle"
+            android:layout_below="@+id/txtCountryRegisterHospitalTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=" City"
+            android:textColor="#698080"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_location_city"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCityRegisterHospital"
+            android:layout_below="@+id/txtCountryRegisterHospitalTitle"
+            android:layout_toRightOf="@+id/txtCityRegisterHospitalTitle"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableStart="@drawable/ic_location"
+            android:id="@+id/txtLocationRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/spinnerCityRegisterHospital"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Location"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            />
+
+    </RelativeLayout>
+
+
+
+   <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNextRegisterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_blue_button"
+            android:layout_alignParentBottom="true"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+</RelativeLayout>

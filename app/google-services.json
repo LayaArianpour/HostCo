@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "528649830872",
+    "project_id": "hostco-f7fc5",
+    "storage_bucket": "hostco-f7fc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528649830872:android:d44e10c4b70d887f5232ad",
+        "android_client_info": {
+          "package_name": "com.example.hostco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528649830872-p9q6r6vcs0rkb71tbk2p5fubg40gc5ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYzmm9WSw0ZT-5I3i8HSVAMPVX6Rrj-XA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528649830872-p9q6r6vcs0rkb71tbk2p5fubg40gc5ob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CovidTestActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/containerHeaderCovidTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackCovidTestActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Corona Testing"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+    <!--Container1-->
+    <RelativeLayout
+        android:id="@+id/container1CovidTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderCovidTestActivity"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+
+        <!--Q1-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title1"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title1"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q1"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q2-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ2"
+            android:layout_below="@id/boxQ1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title2"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title2"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q2"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!--Q3-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ3"
+            android:layout_below="@id/boxQ2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title3"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title3"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q4-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ4"
+            android:layout_below="@id/boxQ3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title4"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title4"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q4"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q5-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ5"
+            android:layout_below="@id/boxQ4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title5"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title5"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q5"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+
+    <!--Container2-->
+    <RelativeLayout
+        android:id="@+id/container2CovidTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderCovidTestActivity"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+
+        <!--Q6-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title6"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title6"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q6"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--Q7-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ7"
+            android:layout_below="@+id/boxQ6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title7"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title7"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q7"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q8-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ8"
+            android:layout_below="@+id/boxQ7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title8"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title8"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q8"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q9-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ9"
+            android:layout_below="@+id/boxQ8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title9"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title9"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q9"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+    <!--Container3-->
+    <RelativeLayout
+        android:id="@+id/container3CovidTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderCovidTestActivity"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+
+        <!--Q10-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title10"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title10"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q10"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q11-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ11"
+            android:layout_below="@id/boxQ10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title11"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title11"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q11"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q12-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ12"
+            android:layout_below="@id/boxQ11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title12"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title12"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q12"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--Q13-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ13"
+            android:layout_below="@id/boxQ12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title13"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title13"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q13"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--Q14-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boxQ14"
+            android:layout_below="@id/boxQ13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/title14"
+                    android:text="NO"
+                    android:padding="10dp"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title14"
+                    android:padding="10dp"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q14"
+                    android:textColor="@color/black"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <!--Container4-->
+    <RelativeLayout
+        android:id="@+id/container4CovidTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderCovidTestActivity"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="6dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/ContainerResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgResult"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtResult"
+                    android:layout_toRightOf="@id/imgResult"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextCovidTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_blue_button"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@color/white">
+
+
+
+    <RelativeLayout
+        android:id="@+id/containerStartActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgWelcome"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/welcome9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="50dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_blue_button"
+            android:layout_below="@+id/imgWelcome"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegiterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_blue_button"
+            android:layout_below="@+id/btnLogin"
+            android:text="@string/btn_register_user"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegiterHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_blue_button"
+            android:layout_below="@+id/btnRegiterUser"
+            android:text="@string/btn_register_hostpital"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

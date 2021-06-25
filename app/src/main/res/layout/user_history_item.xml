@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/container1UserHistory"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtHospitalNameUserHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+                android:text="Hospital Name"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtHospitalTelUserHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="Hospital Tel"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtHospitalNameUserHistory"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/container2UserHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/txtDateUserHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_age"
+                android:layout_marginTop="15dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/txtTimeUserHistory"
+                android:layout_toRightOf="@+id/txtDateUserHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="15dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:inputType="number"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtStatusUserHistory"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_airplay_24"
+            android:text="Status"
+            android:layout_marginTop="95dp"
+            />
+
+        <TextView
+            android:id="@+id/txtHospitalAdressUserHistory"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Hospital Adress"
+            android:layout_marginTop="142dp"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelUserHistory"
+            android:backgroundTint="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Cancel Request"
+            android:textColor="@color/white"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAllCaps="false"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

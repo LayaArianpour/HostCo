@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/container1HospitalRequest"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPatientFNameHospitalRequest"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person"
+                android:text="Patient FName"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txtPatientLNameHospitalRequest"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person"
+                android:text="Patient LName"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtPatientFNameHospitalRequest"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container2HospitalRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:id="@+id/txtDateHospitalRequest"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_age"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/txtTimeHospitalRequest"
+                android:layout_toRightOf="@+id/txtDateHospitalRequest"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:inputType="number"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container3HospitalRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp">
+
+            <TextView
+                android:id="@+id/txtPatientAgeHospitalRequest"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_age"
+                android:text="Patient Age"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/txtPatientTelHospitalRequest"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="Patient Tel"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtPatientAgeHospitalRequest"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txtPatientAdressHospitalRequest"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Patient Adress"
+            android:layout_marginTop="140dp"
+            android:textColor="@color/black"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/container4HospitalRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAcceptHospitalRequest"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRejectHospitalRequest"
+                android:backgroundTint="@color/orange"
+                android:layout_toRightOf="@+id/btnAcceptHospitalRequest"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

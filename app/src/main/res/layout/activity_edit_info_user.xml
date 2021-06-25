@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoUserActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/containerHeaderEditUser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackActivityEditUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Edit Information"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/container1InfoAccountEditUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderEditUser"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtInfoAccountEditUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Information"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUserNameEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoAccountEditUserTitle"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="UserName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+        
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFirstNameEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUserNameEditUser"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="FirstName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLastNameEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFirstNameEditUser"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="LastName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAgeEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLastNameEditUser"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_age"
+            android:hint="Age"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <LinearLayout
+            android:id="@+id/containerWeightHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAgeEditUser"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtHeightEditUser"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_height"
+                android:hint="Height_cm"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:inputType="number"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtWeightEditUser"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_weight"
+                android:hint="Weight_kg"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPhoneEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/containerWeightHeight"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="PhoneNumber"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="phone"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLocationEditUser"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtPhoneEditUser"
+            android:layout_marginTop="30dp"
+            android:hint="Location"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:drawableStart="@drawable/ic_location"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEditEditUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_blue_button"
+        android:layout_alignParentBottom="true"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>

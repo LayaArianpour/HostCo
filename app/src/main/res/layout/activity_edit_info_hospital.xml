@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoHospitalActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/containerHeaderHospitalEditActivity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackAHospitalEditActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Edit Information"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/containerHospitalEditActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/pbHospitalEditActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/txtInfoAccountlTitleHospitalEditActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Edit Information"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNameHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoAccountlTitleHospitalEditActivity"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:hint="Hospital Name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPhoneHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNameHospitalEditActivity"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="Telephone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="phone"
+            />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCapacityHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPhoneHospitalEditActivity"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+            android:hint="Capacity"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtImprovedHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCapacityHospitalEditActivity"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_self_improvement_24"
+            android:hint="Improved"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDeathHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtImprovedHospitalEditActivity"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_mood_bad_24"
+            android:hint="The Dead"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHospitalizationHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDeathHospitalEditActivity"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_baseline_airline_seat_individual_suite_24"
+            android:hint="Hospitalization"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLocationHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/txtHospitalizationHospitalEditActivity"
+            android:layout_marginTop="30dp"
+            android:hint="Location"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:drawableStart="@drawable/ic_location"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditHospitalEditActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_blue_button"
+            android:layout_alignParentBottom="true"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

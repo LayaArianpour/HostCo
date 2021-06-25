@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <item
+        android:id="@+id/EditHospital"
+        android:title="Edit Info"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/RequestsHospital"
+        android:title="Requests"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/HistoryHospital"
+        android:title="Request History"
+        app:showAsAction="never"
+        />
+
+
+    <item
+        android:id="@+id/LogoutHospital"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

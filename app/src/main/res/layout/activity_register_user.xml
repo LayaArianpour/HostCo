@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUserActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/containerHeaderRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_light"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackActivityRegisterUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Register"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbRegisterUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <!--InfoAccount  container1-->
+    <RelativeLayout
+        android:id="@+id/container1InfoAccountRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderRegisterUser"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtInfoAccountRegisterUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_account"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUserNameRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoAccountRegisterUserTitle"
+            android:layout_marginTop="60dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="UserName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUserNameRegisterUser"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textEmailAddress"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPasswordRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmailRegisterUser"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textPassword"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtRePasswordRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPasswordRegisterUser"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:hint="Re Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/txtHaveAccountLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_haveAccount"
+            android:textColor="#698080"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:layout_below="@id/txtRePasswordRegisterUser"/>
+
+
+    </RelativeLayout>
+
+
+    <!--InfoPersonal  container2-->
+    <RelativeLayout
+        android:id="@+id/container2InfoPersonalRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderRegisterUser"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtInfoPersonalRegisterUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_user"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFirstNameRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInfoPersonalRegisterUserTitle"
+            android:layout_marginTop="60dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="FirstName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtLastNameRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFirstNameRegisterUser"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_person"
+            android:hint="LastName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtAgeRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLastNameRegisterUser"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_age"
+            android:hint="Age"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            />
+
+        <LinearLayout
+            android:id="@+id/containerWeightHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAgeRegisterUser"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtHeightRegisterUser"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_height"
+                android:hint="Height_cm"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:inputType="number"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtWeightRegisterUser"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_weight"
+                android:hint="Weight_kg"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPhoneRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/containerWeightHeight"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:hint="PhoneNumber"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="phone"
+            />
+    </RelativeLayout>
+
+
+
+    <!--InfoAddress  container3-->
+    <RelativeLayout
+        android:id="@+id/container3InfoAddressRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/containerHeaderRegisterUser"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtInfoAddressRegisterUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_address"
+            android:textColor="#698080"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/txtCountryRegisterUserTitle"
+            android:layout_below="@+id/txtInfoAddressRegisterUserTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=" Country"
+            android:textColor="#698080"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_location_country"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/txtCountryRegisterUserTitle"
+            android:layout_below="@+id/txtInfoAddressRegisterUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iran"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/txtCityRegisterUserTitle"
+            android:layout_below="@+id/txtCountryRegisterUserTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text=" City"
+            android:textColor="#698080"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableStart="@drawable/ic_location_city"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCityRegisterUser"
+            android:layout_below="@+id/txtCountryRegisterUserTitle"
+            android:layout_toRightOf="@+id/txtCityRegisterUserTitle"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:drawableStart="@drawable/ic_location"
+            android:id="@+id/txtLocationRegisterUser"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/spinnerCityRegisterUser"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Location"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_blue_button"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

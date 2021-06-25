@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="@color/orange"/>
+
+        <RelativeLayout
+            android:id="@+id/container1HospitalHistory"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtPatientFNameHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person"
+                android:text="Patient FName"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txtPatientLNameHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person"
+                android:text="Patient LName"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtPatientFNameHospitalHistory"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container2HospitalHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <TextView
+                android:id="@+id/txtDateHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_age"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/txtTimeHospitalHistory"
+                android:layout_toRightOf="@+id/txtDateHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_access_time_24"
+                android:inputType="number"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container3HospitalHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp">
+
+            <TextView
+                android:id="@+id/txtPatientAgeHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_age"
+                android:text="Patient Age"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/txtPatientTelHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="Patient Tel"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtPatientAgeHospitalHistory"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/container4HospitalHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp">
+
+            <TextView
+                android:id="@+id/txtPatientWeightHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_weight"
+                android:text="Patient Weight"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/txtPatientHeightHospitalHistory"
+                android:padding="5dp"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_height"
+                android:text="Patient Height"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/txtPatientWeightHospitalHistory"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtStatusHospitalHistory"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_airplay_24"
+            android:text="Status"
+            android:layout_marginTop="190dp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/txtPatientAdressHospitalHistory"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location"
+            android:text="Patient Adress"
+            android:layout_marginTop="230dp"
+            android:textColor="@color/black"
+            />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
